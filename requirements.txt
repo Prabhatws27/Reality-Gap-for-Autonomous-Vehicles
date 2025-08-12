@@ -1,0 +1,36 @@
+# === Package Requirements ===
+
+# Carla Python API (ensure version matches your installed CARLA simulator)
+carla==0.9.13
+
+# Ultralytics YOLOv8 (for object detection)
+ultralytics==8.0.168
+
+# OpenCV for image processing
+opencv-python==4.8.1.78
+
+# Numpy for numerical operations
+numpy==1.26.4
+
+# ImageIO for video writing (optional but useful)
+imageio==2.34.0
+
+# Optional: tqdm for progress bars during dataset generation/training
+tqdm==4.66.1
+
+# === Optional: If not automatically installed via Ultralytics, install PyTorch manually ===
+# Make sure the versions below are compatible with your CUDA version
+# torch==2.1.0+cu118
+# torchvision==0.16.0+cu118
+# You can install with: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# === Setup Notes ===
+# 1. Make sure to set PYTHONPATH to the Carla egg file for the Python API:
+#    e.g., export PYTHONPATH=$PYTHONPATH:/path/to/CARLA_0.9.13/PythonAPI/carla/dist/carla-0.9.13-py3.8.egg
+#
+# 2. Use Python 3.8 or 3.9 for best compatibility with Carla and PyTorch.
+#
+# 3. If using GPU, ensure CUDA drivers are properly installed and match your torch build.
+#
+# 4. To install all requirements:
+#    pip install -r requirements.txt
