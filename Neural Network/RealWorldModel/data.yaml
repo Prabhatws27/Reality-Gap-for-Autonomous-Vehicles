@@ -1,0 +1,12 @@
+train: ../train/images
+val: ../valid/images
+
+nc: 2
+names: ['car', 'people']
+
+roboflow:
+  workspace: nikhil-nf64q
+  project: voc1-pi7aj-db8lo
+  version: 1
+  license: CC BY 4.0
+  url: https://app.roboflow.com/nikhil-nf64q/voc1-pi7aj-db8lo/1
